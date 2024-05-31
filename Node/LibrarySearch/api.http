@@ -1,0 +1,59 @@
+
+###
+GET http://localhost:3000/books
+
+###
+GET http://localhost:3000/books/search?pages=350
+
+###
+GET http://localhost:3000/books/66578992d40d3a7dc3b7ad3f
+
+###
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+    "title": "Duna",
+    "price": 120,
+    "pages": 350,
+    "editor": "66593e444e7c6b1fb88ad89b"
+}
+
+###
+PUT http://localhost:3000/books/66593c1f8f8575575f90fecd
+Content-Type: application/json
+
+{
+    "title": "Duna 2"
+}
+
+###
+DELETE http://localhost:3000/books/66593c1f8f8575575f90fecd
+
+// Editors
+###
+GET http://localhost:3000/editors
+
+###
+GET http://localhost:3000/editors/66593e444e7c6b1fb88ad89b
+
+###
+POST http://localhost:3000/editors
+Content-Type: application/json
+
+{
+    "name": "Frank Herbert",
+    "country": "USA"
+}
+
+###
+PUT http://localhost:3000/editors/66593e444e7c6b1fb88ad89b
+Content-Type: application/json
+
+{
+    "country": "US"
+}
+
+###
+DELETE http://localhost:3000/editors/66593e444e7c6b1fb88ad89b
+
